@@ -36,11 +36,12 @@ function App()
         }))
     }, [searchValue]);
 
-    function sortMktCap() {
+    function sortMktCap()
+    {
         setUpdatedStocks([...updatedStocks].sort((a, b) => (b.market_cap - a.market_cap)));
     }
-
-    function sortPercentage() {
+    function sortPercentage()
+    {
         setUpdatedStocks([...updatedStocks].sort((a, b) => (b.price_change_percentage_24h - a.price_change_percentage_24h)));
     }
 
