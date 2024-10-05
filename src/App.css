@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap'); /*Monospace*/ /*100 - 700 weights*/ /*"IBM Plex Mono", system-ui*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*Normal*/ /*100 - 900 weights*/ /*"Kanit", sans-serif*/
+
+* {
+    font-family:  "Kanit", sans-serif
+}
+
+#app {
+    height: 94vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+svg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 150px;
+	width: 150px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 80%;
+    padding-block: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    outline: none;
+    border: 1px solid gray;
+    width: 60%;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 10px 20px;
+    
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.708);
+    }
+}
+
+button {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #212121;
+    border: 1px solid gray;
+    width: 15%;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(128, 128, 128, 0.223);
+    }
+}
+
+img {
+    height: 30px;
+    padding-right: 10px;
+}
+
+.green {
+    color: rgb(4, 216, 4);
+}
+
+.red {
+    color: rgb(219, 6, 6);
+}
+
+.green, .red {
+    justify-content: center;
+    padding-inline: 20px;
+}
+
+.monoFont {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+table {
+    padding-block: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+}
+
+tr, tbody {
+    display: contents;
+}
+
+td {
+    height:3.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.mkt {
+    justify-content: end;
+}
+
+.price {
+    justify-content: end;
+    padding-inline: 30px;
+}
+.volume {
+    justify-content: center;
+}
+
+.symbol {
+    padding-inline: 20px;
+}
+
+.price, .volume, .mkt {
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
