@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Item = ({ stock }) => {
-    function punctuate(n1)
+    function punctuate(num)
     {
         function helper(x) 
         {
@@ -20,17 +20,16 @@ const Item = ({ stock }) => {
             return s.split('').reverse().join('');
         }
 
-        n1 = String(n1);
+        num = String(num);
 
-        if (n1.includes('.'))
+        if (num.includes('.'))
         {
-            n1 = n1.split('.');
-            const n2 = n1[0];
+            num = num.split('.');
 
-            return (helper(n2) + '.' + n1[1]);
+            return (helper(num[0]) + '.' + num[1]);
         }
 
-        return helper(n1);
+        return helper(num);
     }
 
     return (
